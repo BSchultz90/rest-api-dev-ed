@@ -1,3 +1,5 @@
+// Data Schema for Posts.
+
 const mongoose = require("mongoose");
 
 const postSchema = mongoose.Schema({
@@ -15,4 +17,5 @@ const postSchema = mongoose.Schema({
   },
 });
 
+//Exports the Schema to be used elsewhere in the project. * Imported in posts.js
 module.exports = mongoose.model("Posts", postSchema);
